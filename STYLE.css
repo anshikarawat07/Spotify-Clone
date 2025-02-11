@@ -1,0 +1,642 @@
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+body{
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size:medium;
+  margin:0%;
+  color: white;
+  display: flex;
+}
+.main
+{
+    display:flex;
+    background-color:black;
+    height: 90vh;
+    width:20vw;
+}
+
+.main-content
+{
+    flex:1;
+    background-color:#121212; 
+    overflow-y:auto;
+    height:90vh;
+    padding:0 1.5rem 0 1.5rem;
+}
+.music-player
+{
+    display: flex;
+    bottom:0rem;
+    left:0rem;
+    width:100%;
+    height: 10vh;
+    background-color: black ;
+    position: fixed;
+    padding:0.25rem 3rem;
+}
+/********************************************************************* SIDE BAR ******************************************************************/
+.side-bar
+{
+    background-color:black;
+    width:20vw; 
+    height: 90vh; 
+    border-radius: 1rem;
+    padding:0.5rem; 
+}
+                                    /*********************** NAVIGATION : HOME SEARCH ************************ */
+.nav
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* usually-center horizontally but  here direction is opposite */
+    border-radius: 1rem;
+    height: 6.25rem;
+    padding:0.5rem 1rem;
+    background-color: #121212;
+}
+.nav-option
+{
+    line-height:2.5rem ;
+    opacity:0.75;
+    padding-left:0.5rem;
+}
+.nav-option a{
+    text-decoration: none;
+    color:white;
+    margin-left: 1rem;
+} 
+.home,.search:hover{
+    transition: transform 0 ease 0; 
+}
+.home:hover,.search:hover
+{
+    opacity:1;
+    transform: scale(1.05, 1.05);
+}
+.nav-option i
+{
+    font-size:1.25rem;
+}
+                                            /*********************** LIBRARAY ************************ */
+.lib{
+    margin-top: 0.5rem; 
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    padding: 0.75rem ;
+    border-radius: 0.5rem;
+}
+
+.lib-options
+{
+    display: flex;
+}
+
+.lib i
+{
+    font-size:1.25rem;
+    margin-left: 0.75rem;
+} 
+
+.lib-option-library
+{
+    opacity:0.75;
+    margin-left: 1rem;
+    margin-right:2.5rem;
+    transition: transform 0 ease 0; 
+}
+
+.lib-option-plus
+{
+    opacity:0.75;
+    transition: transform 0 ease 0; 
+}
+
+.lib-option-arrow
+{
+    opacity:0.75;
+    transition: transform 0 ease 0; 
+}
+.lib-option-library a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+    margin-left:0.75rem;
+    transition: transform 0 ease 0; 
+}
+.lib-option-library:hover,
+.lib-option-plus:hover,
+.lib-option-arrow:hover
+{
+    opacity:1;
+    transform: scale(1.05,1.05);
+}
+
+/*******************************BOX*****************************************/
+
+.box
+{
+    margin-top: 1rem;
+    padding:0.75rem 0.5rem;
+    background-color:#212121;
+    border-radius: 0.75rem;
+}
+
+.line1{
+    font-size:0.9rem;
+    font-weight: 700;
+    line-height:1.75rem;
+}
+
+.line2{
+    font-size:0.7rem;
+    line-height:1.75rem;
+}
+.button-class
+{
+    margin-top:0.5rem;
+    margin-right: 0.5rem;
+    background-color:white;
+    color: black;
+    font-size:0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0s ease-in 0s;
+    height: 1.75rem;
+    
+}
+.button-class:hover
+{   
+    transform: scale(1.05, 1.05); 
+}
+/* NAVIGATION */
+.sticky-nav
+{
+    padding-left:0.75rem;
+    display:flex;
+    height:3.5rem;
+    width: 100%;
+    align-items: center;
+    position:static ;
+    top:0px;
+    background-color: #121212;
+    position: sticky;
+    z-index: 1;
+}
+.arrow
+{
+    margin-left: 0.3rem; 
+    padding-top: 0.25rem;
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
+    box-sizing: border-box;
+    height:2rem;
+    border-radius: 50%;
+    background-color: #2f2e2e;
+}
+.left-arrow
+{
+    margin-top:0.5rem;
+    margin-left:0.5rem;
+    opacity:0.6;
+    transition: transform 0.1s ease 0s ;
+    
+}
+.right-arrow
+{
+    margin-top:0.5rem;
+    opacity:0.6;
+    transition: transform 0.1s ease-out 0s ;
+}
+.left-arrow:hover
+{
+    opacity:1;
+    transform: scale(1.1,1.1);
+}
+
+.right-arrow:hover
+{
+    opacity:1;
+    transform: scale(1.05,1.05);
+    
+}
+.side-nav
+{
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+}
+.premium
+{
+    margin-top:0.5rem;
+    margin-right: 0.5rem;
+    background-color:white;
+    color: black;
+    font-size:0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.1s ease-in 0s,background-color 0s ease-in 0s,color 0s ease-in 0s;
+    height: 1.75rem;
+    opacity: 0.9;
+}
+.premium:hover
+{
+    transform: scale(1.05, 1.05); 
+    background-color: black;
+    color:white;
+}
+.install
+{
+    margin-top:0.5rem;
+    margin-right: 0.5rem;
+    background-color:white;
+    color: black;
+    font-size:0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.1s ease-in 0s,background-color 0s ease-in 0s,color 0s ease-in 0s;
+    height: 1.75rem;
+    opacity: 0.9;
+}
+.install:hover
+{
+    transform: scale(1.05, 1.05); 
+    background-color: black;
+    color:white;
+}
+.user{
+    color: white;
+    padding-top:0.5rem;
+    margin-left: 0.5rem;
+    font-size:1.35rem;
+}
+.user:hover
+{
+    transition: transform 0.1s ease-in 0s;
+    transform: scale(1.05, 1.05);    
+}
+@media (max-width:1000px)
+{
+    .hide
+    {
+        display: none;
+    }
+    .left-arrow
+    {
+        margin-right:30rem;
+    }
+}
+
+.card-conatiner
+{
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}    
+
+.card
+{
+    background-color: #121212;
+    color: white;
+    border-radius: 1rem;
+    width:9vw;
+    height:35vh;
+    padding: 0.5rem;
+    margin:0.5rem;
+    justify-content:space-evenly ;
+    transition: transform 0s ease-in 0s;
+    
+}
+.card:hover
+{
+    background-color: #212121;
+    transform: scale(1.05,1.05);
+}
+
+.card-img
+{
+    width:100%;
+    border-radius: 1rem;
+}
+.artist-img
+{
+    border-radius: 50% ;
+    height: 9rem;
+}
+
+.card-title
+{
+    margin-top:0.5rem;
+    line-height:1rem;
+    font-size:0.9rem;
+    font-weight: 700;
+}
+.card-artist
+{
+    font-size:0.65rem;
+}
+.heading
+{
+    display: flex;
+    font-size: 0.8rem;
+    padding-left:0.5rem;
+    justify-content: space-between;
+
+}
+.see-more{
+    padding-top:1.5rem;
+    padding-right:2rem;
+    transition: transform 0s ease 0s;
+}
+.see-more:hover{
+    transform: scale(1.05,1.05);
+}
+h3{
+    margin-top:1rem;
+    font-weight: 600;
+}
+
+
+/* footer */
+
+footer{
+    background-color:#121212;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+    height: 25rem;
+}
+.foot1{
+    margin-top: 3.5rem;
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+}
+.foot1 p{
+    font-size: 0.9rem;
+   font-weight: 700;
+}
+ul a
+{
+    margin-top: 0.2rem;
+    font-size:0.7rem;
+    display:block;
+    color: white;
+    text-decoration: none ;
+    opacity:0.7;
+}
+ul a:hover
+{
+    opacity: 1;
+    text-decoration: underline;
+}
+.twitter,.insta, .facebook
+{
+    padding: 0.4rem;
+    border-radius: 50%;
+    background-color:#2f2e2e;
+    font-size: 1.05rem;
+    margin-right: 1rem;
+    opacity:0.7;
+    transition: transform 0.1s ease-in 0s;
+}
+.twitter:hover, .insta:hover, .facebook:hover
+{
+    transform: scale(1.1,1.1);
+    opacity:1;
+}
+.foot2
+{
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+.foot3
+{
+    margin-top: 1rem;
+    opacity: 0.7;
+    font-size: 0.65rem;
+}
+
+.part1
+{
+    width:25%;
+    height:100%;
+    display: flex;
+    justify-content:space-around;
+}
+.song-img
+{
+    padding:0.5rem;
+    /* background-color:red; */
+    width: 100%;
+    height: 100%;
+    
+}
+.song-info
+{
+    display:flex ;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.song-title
+{
+    font-size: 0.9rem;
+    font-weight: 700;
+    height:50%;
+    margin-bottom:0%;
+    color: white;
+    text-decoration:none ;
+}
+.song-title:hover{
+    text-decoration: underline;
+}
+.song-artist
+{
+    font-size: 0.7rem;
+    height:50%;
+    margin-bottom: 0%;
+    opacity:0.8;
+    color:white;
+    text-decoration:none ;
+}
+.song-artist:hover
+{
+    opacity:1;
+    text-decoration: underline;
+}
+.control-fav{
+    padding:1rem 3rem 1rem 0rem;
+}
+.control-fav input[type="checkbox"] {
+display: none;
+}
+
+/* Default: Regular heart icon */
+.control-fav label::before {
+content: "\f004"; /* Unicode for the regular heart icon */
+font-family: "Font Awesome 5 Free";
+font-weight: 400;
+transition: all 0.3s ease-in-out;
+}
+
+
+/* When the checkbox is checked (hovered or clicked), show solid heart */
+.control-fav input[type="checkbox"]:checked + label::before {
+content: "\f004"; /* Unicode for the solid heart icon */
+font-family: "Font Awesome 5 Free";
+font-weight: 900; 
+}
+
+.part2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width:50%;
+    background-color:black;
+}
+.control-music
+{
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.25rem;
+}
+.controller
+{
+    width:60%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:0.25rem;
+}
+.controller button{
+    font-size: 1rem;
+    padding: 0.23rem 0.56rem 0.33rem 0.6rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.play-pause
+{
+    background-color: rgb(217, 216, 216);
+    color: black;
+    height:2rem ;
+    width:2rem ;
+}
+.shuffle , .prev, .next ,.repeat
+{
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    transition: transform 0s ease 0s;
+}
+.shuffle:hover , .prev:hover, .next:hover ,.repeat:hover, .play-pause:hover
+{
+    opacity: 1;
+    transform: scale(1.05,1.05);
+}
+
+.progress
+{
+    /* opacity:1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: black; 
+}
+.progress-bar
+{
+    appearance: none;
+    width: 80%;
+    height: 1rem;
+    cursor: pointer;
+    background-color: transparent ;
+
+}
+.progress-bar::-webkit-slider-runnable-track
+{
+    appearance: none ;
+    background-color: rgb(217, 216, 216);
+    border-radius: 100px;
+    height:0.2rem;
+}
+.progress-bar::-webkit-slider-thumb
+{
+    appearance: none;
+    height:0.8rem;
+    width:0.8rem;
+    background-color:#1bd760;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top:-0.4rem;
+
+}
+.current-time,.total-time
+{
+    color: white;
+    font-size: 0.8rem;
+    margin:0.5rem;
+}
+
+.part3
+{
+    display: flex;
+    justify-content:space-around;
+    background-color:black;
+}
+.footer-img
+{
+    margin-top: 0.5rem;
+}
+.volume
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+    opacity: 0.5;
+    transition: transform 0s ease 0s;
+}
+.volume:hover
+{
+    opacity: 1;
+    transform: scale(1.05,1.05);
+}
+.volume-control
+{
+    appearance: none;
+    width:50%;
+    margin-left: 0.5rem ;
+    
+}
+
+.volume-control::-webkit-slider-runnable-track
+{
+    appearance: none;
+    background-color: rgb(217, 216, 216);
+    border-radius: 100px;
+    height:0.1rem;
+    width:30%;
+}
+.volume-control::-webkit-slider-thumb
+{
+    appearance: none;
+    height:0.4rem;
+    width:0.4rem;
+    background-color:#1bd760;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top:-0.19rem;
+}
